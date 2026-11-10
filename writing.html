@@ -1,0 +1,24 @@
+---
+layout: default
+title: Writing
+description: Articles, technical notes and learning notes by Joshua Anayochukwu.
+---
+<div class="wrap page">
+  <header class="page-head">
+    <h1>Writing</h1>
+    <p class="lede">Articles on data quality, analytics and automation, plus short notes on things I've learned.</p>
+  </header>
+  {% if site.posts.size > 0 %}
+  <ul class="post-list post-list-full">
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="muted">{{ post.date | date: "%-d %b %Y" }}{% if post.kind == "note" %}, short note{% endif %}</span>
+      {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>The first articles are being written. Meanwhile, the <a href="{{ '/projects/' | relative_url }}">project pages</a> explain how I approach each problem.</p>
+  {% endif %}
+</div>

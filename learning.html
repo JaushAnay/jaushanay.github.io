@@ -1,0 +1,23 @@
+---
+layout: default
+title: Learning
+description: Certifications, courses and training completed by Joshua Anayochukwu.
+---
+<div class="wrap page">
+  <header class="page-head">
+    <h1>Learning</h1>
+    <p class="lede">Certifications and courses, newest first, with what each one taught me.</p>
+  </header>
+  <ol class="learning" reversed>
+    {% for c in site.data.learning %}
+    <li>
+      <div class="learning-meta">{% if c.year != "" %}{{ c.year }}{% endif %}</div>
+      <div>
+        <h2 class="learning-name">{{ c.name }}</h2>
+        <p class="muted">{{ c.issuer }}</p>
+        {% if c.learned %}<p>{{ c.learned }}</p>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</div>

@@ -1,0 +1,78 @@
+# ─────────────────────────────────────────────────────────────
+#  Site settings. Edit the values on the right of each colon.
+#  After saving, GitHub rebuilds the site in about a minute.
+# ─────────────────────────────────────────────────────────────
+
+title: Joshua Anayochukwu
+tagline: Data Validation Specialist | Data Quality & Analytics | AI Evaluation & Automation
+description: >-
+  Data validation specialist in Kano, Nigeria. I check, correct and maintain
+  high-volume data, and build analytics, pipelines and automations on top of it.
+
+url: "https://jaushanay.github.io"
+baseurl: ""
+
+author:
+  name: Joshua Chijindu Anayochukwu
+  short_name: Joshua Anayochukwu
+  email: anayochukwujoshua53@gmail.com
+  location: Kano, Nigeria
+  timezone: WAT (UTC+1)
+  # Optional photo: upload it to assets/img/ and write its path, e.g. /assets/img/joshua.jpg
+  photo: ""
+
+# Leave a link empty ("") to hide it everywhere on the site.
+links:
+  linkedin: https://www.linkedin.com/in/joshua-anayochukwu
+  github: https://github.com/JaushAnay
+  x: https://x.com/JaushAnay
+  upwork: ""
+
+# Your CV: upload the PDF to assets/ and write its path, e.g. /assets/Joshua_Anayochukwu_CV.pdf
+cv_file: ""
+
+# When this date changes, update the Now page too.
+now_updated: November 2026
+
+twitter:
+  username: JaushAnay
+social:
+  name: Joshua Anayochukwu
+  links:
+    - https://www.linkedin.com/in/joshua-anayochukwu
+    - https://x.com/JaushAnay
+    - https://github.com/JaushAnay
+logo: /assets/img/social-card.png
+image: /assets/img/social-card.png
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope: { path: "", type: projects }
+    values: { layout: project }
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+  - scope: { path: "" }
+    values: { layout: page }
+
+permalink: /writing/:title/
+
+exclude:
+  - README.md
+  - templates/
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,99 @@
+---
+layout: default
+title: Data quality, analytics and AI evaluation
+description: Joshua Anayochukwu is a data validation specialist in Kano, Nigeria, working across data quality, analytics, data engineering and AI evaluation.
+---
+<section class="hero wrap">
+  <div class="hero-text">
+    <h1 class="hero-title">I make data trustworthy, then make it useful.</h1>
+    <p class="hero-lede">I'm Joshua Anayochukwu, a data validation specialist at Sportmonks. Every day I check football records against authoritative sources before customers rely on them. I'm building on that with analytics, data pipelines, and AI evaluation and automation.</p>
+    <div class="actions">
+      <a class="button button-primary" href="{{ '/projects/' | relative_url }}">See my projects</a>
+      <a class="button" href="{{ '/contact/' | relative_url }}">Work with me</a>
+      {% if site.cv_file != "" %}<a class="button button-quiet" href="{{ site.cv_file | relative_url }}">Download CV (PDF)</a>{% endif %}
+    </div>
+  </div>
+
+  <figure class="record" aria-labelledby="record-title">
+    <figcaption class="record-head">
+      <span id="record-title" class="record-title">Verification record</span>
+      <span class="record-sub">Each attribute checked against a source</span>
+    </figcaption>
+    <dl class="record-rows">
+      <div class="record-row" style="--i:0">
+        <dt>Name</dt>
+        <dd>Joshua Chijindu Anayochukwu<small>B.Sc. Public Administration, Ahmadu Bello University</small></dd>
+        <span class="tick" aria-hidden="true"></span>
+      </div>
+      <div class="record-row" style="--i:1">
+        <dt>Current role</dt>
+        <dd>Data Validation Specialist<small>Sportmonks, Feb 2026 – present</small></dd>
+        <span class="tick" aria-hidden="true"></span>
+      </div>
+      <div class="record-row" style="--i:2">
+        <dt>Works on</dt>
+        <dd>Data quality, analytics, AI evaluation and automation<small>See projects for evidence</small></dd>
+        <span class="tick" aria-hidden="true"></span>
+      </div>
+      <div class="record-row" style="--i:3">
+        <dt>Based in</dt>
+        <dd>Kano, Nigeria<small>{{ site.author.timezone }}</small></dd>
+        <span class="tick" aria-hidden="true"></span>
+      </div>
+      <div class="record-row" style="--i:4">
+        <dt>Availability</dt>
+        <dd>Open to remote work<small>Roles, contracts and freelance projects</small></dd>
+        <span class="tick" aria-hidden="true"></span>
+      </div>
+    </dl>
+    <p class="record-foot"><strong>Confidence: high.</strong> 5 of 5 attributes verified.</p>
+  </figure>
+</section>
+
+<section class="wrap section">
+  <h2>What I work on</h2>
+  <ul class="tracks">
+    {% for t in site.data.tracks %}
+      {% assign n = 0 %}
+      {% for p in site.projects %}{% if p.tracks contains t.id %}{% assign n = n | plus: 1 %}{% endif %}{% endfor %}
+      <li class="track">
+        <h3><a href="{{ '/projects/' | relative_url }}#{{ t.id }}">{{ t.name }}</a></h3>
+        <p>{{ t.line }}</p>
+        <p class="muted">{{ n }} project{% if n != 1 %}s{% endif %}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="wrap section">
+  <div class="section-head">
+    <h2>Selected work</h2>
+    <a href="{{ '/projects/' | relative_url }}">All projects</a>
+  </div>
+  <div class="cards">
+    {% assign featured = site.projects | where: "featured", true | sort: "order" %}
+    {% for p in featured %}{% include project-card.html project=p %}{% endfor %}
+  </div>
+</section>
+
+<section class="wrap section split">
+  <div>
+    <h2>Where I work now</h2>
+    <p>At <strong>Sportmonks</strong>, a global sports data provider, I validate fixtures, seasons, teams, players, referees, coaches and competitions across five continents, including lower-tier leagues where reliable sources are scarce. My speciality is identity: telling a rebranded club from a new one, and a reserve side from its first team.</p>
+    <p><a href="{{ '/experience/' | relative_url }}">Read my full experience</a></p>
+  </div>
+  {% if site.posts.size > 0 %}
+  <div>
+    <h2>Latest writing</h2>
+    <ul class="post-list">
+      {% for post in site.posts limit:3 %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="muted">{{ post.date | date: "%-d %b %Y" }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</section>
+
+<section class="wrap section">
+  {% include closing-cta.html %}
+</section>

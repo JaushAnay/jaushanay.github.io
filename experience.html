@@ -1,0 +1,28 @@
+---
+layout: default
+title: Experience
+description: Work experience of Joshua Anayochukwu, data validation specialist at Sportmonks.
+---
+<div class="wrap page">
+  <header class="page-head">
+    <h1>Experience</h1>
+    <p class="lede">Every role I've held has come down to the same thing: keeping records accurate so other people can rely on them.</p>
+    {% if site.cv_file != "" %}<p><a class="button" href="{{ site.cv_file | relative_url }}">Download CV (PDF)</a></p>{% endif %}
+  </header>
+  {% for job in site.data.experience %}
+  <section class="job">
+    <div class="job-meta">
+      <p>{{ job.dates }}</p>
+      <p class="muted">{{ job.place }}</p>
+    </div>
+    <div class="job-body">
+      <h2>{{ job.role }}</h2>
+      <p class="job-org">{{ job.org }}{% if job.org_note %}<span class="muted">, {{ job.org_note | downcase }}</span>{% endif %}</p>
+      <ul>
+        {% for pt in job.points %}<li>{{ pt }}</li>{% endfor %}
+      </ul>
+      {% if job.case_study %}<p><a href="{{ job.case_study | relative_url }}">How I verify club identities</a></p>{% endif %}
+    </div>
+  </section>
+  {% endfor %}
+</div>
