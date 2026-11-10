@@ -1,0 +1,10 @@
+{% assign p = include.project %}
+<article class="card" data-tracks="{{ p.tracks | join: ' ' }}">
+  <div class="card-top">
+    {% include status.html status=p.status %}
+    {% if p.data_note %}<span class="data-note">{{ p.data_note }}</span>{% endif %}
+  </div>
+  <h3 class="card-title"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+  <p class="card-summary">{{ p.summary }}</p>
+  <p class="card-tools"><span class="visually-hidden">Tools: </span>{{ p.tools | join: ", " }}</p>
+</article>

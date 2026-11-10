@@ -1,0 +1,15 @@
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.author.short_name }}</a>
+    <nav class="nav" aria-label="Main">
+      {% assign nav = "About|/about/,Experience|/experience/,Projects|/projects/,Writing|/writing/,Learning|/learning/" | split: "," %}
+      {% for item in nav %}
+        {% assign parts = item | split: "|" %}
+        {% if parts[0] == "Writing" and site.posts.size == 0 %}{% continue %}{% endif %}
+        <a href="{{ parts[1] | relative_url }}"{% if page.url contains parts[1] %} aria-current="page"{% endif %}>{{ parts[0] }}</a>
+      {% endfor %}
+      <a class="nav-cta" href="{{ '/contact/' | relative_url }}"{% if page.url contains '/contact/' %} aria-current="page"{% endif %}>Work with me</a>
+    </nav>
+  </div>
+</header>

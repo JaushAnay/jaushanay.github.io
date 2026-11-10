@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<article class="wrap page">
+  <header class="page-head">
+    <p class="muted"><a href="{{ '/projects/' | relative_url }}">Projects</a></p>
+    <h1>{{ page.title }}</h1>
+    <p class="lede">{{ page.summary }}</p>
+  </header>
+
+  <dl class="facts">
+    <div><dt>Status</dt><dd>{% include status.html status=page.status %}</dd></div>
+    {% if page.role %}<div><dt>My role</dt><dd>{{ page.role }}</dd></div>{% endif %}
+    <div><dt>Areas</dt><dd>
+      {% for t in page.tracks %}{% assign tr = site.data.tracks | where: "id", t | first %}<a class="tag" href="{{ '/projects/' | relative_url }}#{{ t }}">{{ tr.name }}</a>{% endfor %}
+    </dd></div>
+    <div><dt>Tools</dt><dd>{{ page.tools | join: ", " }}</dd></div>
+    {% if page.data_note %}<div><dt>Data</dt><dd>{{ page.data_note }}</dd></div>{% endif %}
+    {% assign has_repo = false %}{% if page.repo and page.repo != "" %}{% assign has_repo = true %}{% endif %}
+    {% assign has_dash = false %}{% if page.dashboard and page.dashboard != "" %}{% assign has_dash = true %}{% endif %}
+    {% if has_repo or has_dash %}<div><dt>Links</dt><dd>
+      {% if has_repo %}<a href="{{ page.repo }}">Code on GitHub</a>{% endif %}
+      {% if has_repo and has_dash %}<br>{% endif %}
+      {% if has_dash %}<a href="{{ page.dashboard }}">Interactive dashboard</a>{% endif %}
+    </dd></div>{% endif %}
+  </dl>
+
+  <div class="prose prose-serif">
+    {{ content }}
+  </div>
+
+  {% assign sorted = site.projects | sort: "order" %}
+  {% for p in sorted %}{% if p.url == page.url %}{% assign idx = forloop.index0 %}{% endif %}{% endfor %}
+  {% assign next_idx = idx | plus: 1 %}
+  {% if next_idx >= sorted.size %}{% assign next_idx = 0 %}{% endif %}
+  {% assign next = sorted[next_idx] %}
+  <nav class="next-project" aria-label="Next project">
+    <span class="muted">Next project</span>
+    <a href="{{ next.url | relative_url }}">{{ next.title }}</a>
+  </nav>
+  {% include closing-cta.html %}
+</article>

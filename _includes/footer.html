@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-name">{{ site.author.name }}</p>
+      <p class="muted">{{ site.author.location }}, {{ site.author.timezone }}. Open to remote work.</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="mailto:{{ site.author.email }}">Email</a></li>
+      {% if site.links.linkedin != "" %}<li><a href="{{ site.links.linkedin }}">LinkedIn</a></li>{% endif %}
+      {% if site.links.github != "" %}<li><a href="{{ site.links.github }}">GitHub</a></li>{% endif %}
+      {% if site.links.upwork != "" %}<li><a href="{{ site.links.upwork }}">Upwork</a></li>{% endif %}
+      {% if site.links.x != "" %}<li><a href="{{ site.links.x }}">X</a></li>{% endif %}
+      <li><a href="{{ '/now/' | relative_url }}">What I'm doing now</a></li>
+    </ul>
+  </div>
+</footer>
