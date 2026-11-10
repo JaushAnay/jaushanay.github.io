@@ -1,0 +1,23 @@
+# Three honest levels. Move a skill up as your projects prove it.
+- level: Use professionally
+  note: Part of my daily paid work.
+  items:
+    - Data validation and quality assurance
+    - Entity and identity resolution
+    - Source verification and fact-checking
+    - Data cleaning and standardisation
+    - AI response evaluation
+    - Excel and Google Sheets (pivot tables, lookups, logical functions)
+    - Slack and Google Workspace
+- level: Building projects with
+  note: Used in the projects on this site, growing with each one.
+  items:
+    - SQL on PostgreSQL (filtering, joins, aggregation)
+    - Power BI
+    - Power Query
+    - n8n workflow automation (self-hosted on Render)
+    - Prompt writing for AI-assisted research
+- level: Learning
+  note: Early stages, with projects planned.
+  items:
+    - Supabase

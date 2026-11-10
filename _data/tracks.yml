@@ -1,0 +1,13 @@
+# The four areas projects are tagged with. "id" must match the tracks: list in each project file.
+- id: data-quality
+  name: Data quality & validation
+  line: Finding, classifying and fixing what is wrong with data before anyone relies on it.
+- id: analytics
+  name: Data analytics
+  line: Turning checked data into answers people can act on.
+- id: data-engineering
+  name: Data engineering
+  line: Pipelines that move data and run quality checks automatically.
+- id: ai-automation
+  name: AI evaluation & automation
+  line: Reviewing AI output for accuracy, and automating routine data work with n8n.

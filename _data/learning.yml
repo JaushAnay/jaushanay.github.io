@@ -1,0 +1,36 @@
+# Newest first. "learned" is one plain sentence; leave year as "" if you don't want one shown.
+- name: AI Automation Course (8 weeks)
+  issuer: The AI Colony
+  year: 2026
+  learned: Hands-on workflow automation with n8n. Deployed a self-hosted n8n instance on Render, connected workflows to Google Sheets through my own Google Cloud OAuth client, and was introduced to Supabase.
+- name: Google Data Analytics Professional Certificate
+  issuer: Google / Coursera
+  year: 2026
+  learned: The full analysis process, from framing questions and cleaning data to analysis and visualisation with spreadsheets, SQL and Tableau.
+- name: Introduction to Artificial Intelligence and Large Language Models
+  issuer: Cyberiad Labs
+  year: 2026
+  learned: Foundations of AI, and how large language models work and are applied.
+- name: SQL Fundamentals Skill Track
+  issuer: DataCamp
+  year: ""
+  learned: Querying, filtering, joining and aggregating relational data in PostgreSQL.
+- name: AI Fundamentals Skill Track
+  issuer: DataCamp
+  year: ""
+  learned: AI and generative AI concepts, large language models, prompt engineering and responsible AI.
+- name: Data Analytics Essentials
+  issuer: Cisco Networking Academy
+  year: 2025
+- name: Excel & Google Sheets Fundamentals
+  issuer: DataCamp
+  year: 2025
+- name: Data Analytics Using Excel
+  issuer: LinkedIn Learning
+  year: 2025
+- name: Monitoring, Evaluation, Accountability and Learning (MEAL)
+  issuer: DisasterReady
+  year: 2025
+- name: Content Marketing Certificate
+  issuer: HubSpot Academy
+  year: 2025
