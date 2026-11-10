@@ -7,8 +7,10 @@ tracks: [data-quality, data-engineering]
 tools: [PostgreSQL, SQL]
 data_note: Synthetic data, designed with deliberate errors
 repo: ""
-featured: true
-order: 2
+cover: /assets/img/projects/football-dq-lab.svg
+cover_alt: "Football DQ Lab pipeline: ingest, validate, detect, classify, track, resolve and report"
+featured: false
+order: 5
 ---
 
 ## Why I'm building it

@@ -3,6 +3,7 @@
   <div class="wrap header-inner">
     <a class="brand" href="{{ '/' | relative_url }}">{{ site.author.short_name }}</a>
     <nav class="nav" aria-label="Main">
+      <a href="{{ '/' | relative_url }}"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a>
       {% assign nav = "About|/about/,Experience|/experience/,Projects|/projects/,Writing|/writing/,Learning|/learning/" | split: "," %}
       {% for item in nav %}
         {% assign parts = item | split: "|" %}

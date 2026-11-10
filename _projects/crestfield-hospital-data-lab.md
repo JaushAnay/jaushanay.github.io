@@ -8,8 +8,9 @@ tools: [PostgreSQL, SQL, Power BI]
 data_note: Synthetic data, no real patients
 repo: ""
 dashboard: ""
+cover: ""
 featured: false
-order: 4
+order: 6
 ---
 
 ## Why I'm building it

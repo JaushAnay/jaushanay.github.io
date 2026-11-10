@@ -1,5 +1,6 @@
 {% assign p = include.project %}
 <article class="card" data-tracks="{{ p.tracks | join: ' ' }}">
+  {% if p.cover and p.cover != "" %}<div class="card-media"><img src="{{ p.cover | relative_url }}" alt="" loading="lazy"></div>{% endif %}
   <div class="card-top">
     {% include status.html status=p.status %}
     {% if p.data_note %}<span class="data-note">{{ p.data_note }}</span>{% endif %}

@@ -3,6 +3,10 @@
   issuer: The AI Colony
   year: 2026
   learned: Hands-on workflow automation with n8n. Deployed a self-hosted n8n instance on Render, connected workflows to Google Sheets through my own Google Cloud OAuth client, and was introduced to Supabase.
+- name: Data Visualization Trainee, Early Remote Internship Certificate
+  issuer: Excelerate
+  year: 2026
+  learned: Completed the virtual Data Analysis and Visualization internship, analysing an unstructured real-world dataset in a remote international team.
 - name: Google Data Analytics Professional Certificate
   issuer: Google / Coursera
   year: 2026
@@ -13,11 +17,11 @@
   learned: Foundations of AI, and how large language models work and are applied.
 - name: SQL Fundamentals Skill Track
   issuer: DataCamp
-  year: ""
+  year: 2026
   learned: Querying, filtering, joining and aggregating relational data in PostgreSQL.
 - name: AI Fundamentals Skill Track
   issuer: DataCamp
-  year: ""
+  year: 2026
   learned: AI and generative AI concepts, large language models, prompt engineering and responsible AI.
 - name: Data Analytics Essentials
   issuer: Cisco Networking Academy
@@ -27,9 +31,6 @@
   year: 2025
 - name: Data Analytics Using Excel
   issuer: LinkedIn Learning
-  year: 2025
-- name: Monitoring, Evaluation, Accountability and Learning (MEAL)
-  issuer: DisasterReady
   year: 2025
 - name: Content Marketing Certificate
   issuer: HubSpot Academy

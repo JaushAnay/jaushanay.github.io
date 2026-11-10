@@ -6,6 +6,8 @@ role: Data Validation Specialist, Sportmonks
 tracks: [data-quality]
 tools: [Authoritative source research, Excel, Google Sheets, AI-assisted research]
 data_note: Professional work, described as method only
+cover: /assets/img/projects/club-identity-verification.svg
+cover_alt: "Five steps of the club identity method: compare, source, weigh, variants, record"
 featured: true
 order: 1
 ---

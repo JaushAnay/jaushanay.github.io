@@ -7,8 +7,9 @@ tracks: [analytics]
 tools: [Excel, Power Query, Power BI]
 data_note: Synthetic data for a fictional club
 dashboard: ""
+cover: ""
 featured: false
-order: 6
+order: 7
 ---
 
 ## Why I'm building it

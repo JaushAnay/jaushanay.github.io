@@ -8,6 +8,12 @@ layout: default
     <p class="lede">{{ page.summary }}</p>
   </header>
 
+  {% if page.cover and page.cover != "" %}
+  <figure class="project-cover">
+    <img src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | default: page.title }}">
+  </figure>
+  {% endif %}
+
   <dl class="facts">
     <div><dt>Status</dt><dd>{% include status.html status=page.status %}</dd></div>
     {% if page.role %}<div><dt>My role</dt><dd>{{ page.role }}</dd></div>{% endif %}
