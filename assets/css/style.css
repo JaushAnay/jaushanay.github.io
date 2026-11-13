@@ -3,33 +3,34 @@
    Colours live in the two blocks below (light, then dark).
    ────────────────────────────────────────────────────────── */
 
-/* ── Colours ─────────────────────────────────────────
-   brand = main green, accent = saffron highlight.
+/* ── Colours: Espresso & Cream ───────────────────────
+   The whole site is dark. brand = caramel, accent = cream.
    Each area of work has its own colour (--c-...).       */
 :root {
-  --paper: #ffffff;
-  --wash: #f2f7f4;
-  --surface: #ffffff;
-  --ink: #0f1d2b;
-  --muted: #4d5c68;
-  --rule: #dce4e0;
-  --brand: #008751;
-  --brand-ink: #006a40;
-  --brand-tint: #e0f4ea;
-  --accent: #f5a524;
-  --accent-ink: #8a5600;
-  --on-brand: #ffffff;
-  --hero-1: #063f2a;
-  --hero-2: #0a6b45;
+  --paper: #15100d;
+  --wash: #100b08;
+  --surface: #1e1814;
+  --ink: #f1e9e1;
+  --muted: #b3a69a;
+  --rule: #352b24;
+  --brand: #d9a36b;
+  --brand-ink: #e8b98a;
+  --brand-tint: rgba(217, 163, 107, 0.14);
+  --accent: #e7c9a0;
+  --accent-text: #22170b;
+  --on-brand: #22170b;
+  --hero-1: #120c09;
+  --hero-2: #3a2a1f;
+  --hero-glow: rgba(231, 201, 160, 0.18);
   --hero-text: #ffffff;
-  --hero-muted: #cfe9dc;
-  --pending: #a35200;
-  --pending-tint: #fff1d6;
+  --hero-muted: #d6c6b6;
+  --pending: #f0b765;
+  --pending-tint: rgba(240, 183, 101, 0.15);
 
-  --c-data-quality: #008751;  --c-data-quality-tint: #e0f4ea;
-  --c-analytics: #1f6fe0;     --c-analytics-tint: #e5effd;
-  --c-data-engineering: #7a3ee6; --c-data-engineering-tint: #f0e8fd;
-  --c-ai-automation: #e2580b; --c-ai-automation-tint: #fdeadf;
+  --c-data-quality: #3ad48e;  --c-data-quality-tint: rgba(58, 212, 142, 0.15);
+  --c-analytics: #6ea8ff;     --c-analytics-tint: rgba(110, 168, 255, 0.15);
+  --c-data-engineering: #b38cff; --c-data-engineering-tint: rgba(179, 140, 255, 0.16);
+  --c-ai-automation: #ff9550; --c-ai-automation-tint: rgba(255, 149, 80, 0.16);
 
   --sans: "Public Sans", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
   --serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
@@ -41,36 +42,7 @@
   --radius: 12px;
   --wrap: 72rem;
   --measure: 42rem;
-  color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #0c1620;
-    --wash: #111e29;
-    --surface: #142330;
-    --ink: #e6edf0;
-    --muted: #9fb0ba;
-    --rule: #263746;
-    --brand: #2fcf86;
-    --brand-ink: #5ddca1;
-    --brand-tint: rgba(47, 207, 134, 0.15);
-    --accent: #ffbd45;
-    --accent-ink: #ffcf73;
-    --on-brand: #06261a;
-    --hero-1: #062a1d;
-    --hero-2: #0a4a31;
-    --hero-text: #ffffff;
-    --hero-muted: #b9dccb;
-    --pending: #ffb85c;
-    --pending-tint: rgba(255, 184, 92, 0.15);
-
-    --c-data-quality: #3ad48e;  --c-data-quality-tint: rgba(58, 212, 142, 0.15);
-    --c-analytics: #6ea8ff;     --c-analytics-tint: rgba(110, 168, 255, 0.15);
-    --c-data-engineering: #b38cff; --c-data-engineering-tint: rgba(179, 140, 255, 0.16);
-    --c-ai-automation: #ff9550; --c-ai-automation-tint: rgba(255, 149, 80, 0.16);
-    color-scheme: dark;
-  }
+  color-scheme: dark;
 }
 
 /* Each area sets --t / --t-tint for whatever sits inside it */
@@ -149,10 +121,10 @@ p { margin: 0 0 1em; }
   transition: transform 0.15s ease, background-color 0.15s ease;
 }
 .button:hover { transform: translateY(-1px); }
-.button-primary { background: var(--accent); border-color: var(--accent); color: #1b1300; }
-.button-primary:hover { background: #ffb43d; border-color: #ffb43d; }
+.button-primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+.button-primary:hover { background: #f2dbb9; border-color: #f2dbb9; }
 .button-light { border-color: currentColor; color: inherit; background: transparent; }
-.button-light:hover { background: rgba(255, 255, 255, 0.12); }
+.button-light:hover { background: rgba(255, 255, 255, 0.08); }
 .button-link { border-color: transparent; color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
 .button-quiet { border-color: transparent; color: var(--brand-ink); text-decoration: underline; }
 @media (prefers-reduced-motion: reduce) { .button { transition: none; } .button:hover { transform: none; } }
@@ -162,9 +134,9 @@ p { margin: 0 0 1em; }
 .hero-band {
   color: var(--hero-text);
   background:
-    radial-gradient(60rem 30rem at 100% 0%, rgba(245, 165, 36, 0.28), transparent 60%),
-    radial-gradient(40rem 30rem at 0% 100%, rgba(47, 207, 134, 0.25), transparent 60%),
+    radial-gradient(60rem 30rem at 100% 0%, var(--hero-glow), transparent 60%),
     linear-gradient(135deg, var(--hero-1), var(--hero-2));
+  border-bottom: 1px solid var(--rule);
 }
 .hero { padding-block: clamp(3.75rem, 9vw, 7rem) clamp(3.25rem, 7vw, 5.5rem); }
 .hero-title { color: var(--hero-text); font-size: clamp(2.5rem, 6vw, 4.6rem); line-height: 1.04; letter-spacing: -0.022em; font-weight: 700; max-width: 15ch; margin-bottom: 0.45em; }
@@ -200,7 +172,7 @@ p { margin: 0 0 1em; }
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 1.25rem; margin-top: 1.5rem; }
 .card { background: var(--surface); border: 1px solid var(--rule); border-top: 4px solid var(--t, var(--brand)); border-radius: var(--radius); padding: 1.35rem 1.35rem 1.2rem; display: flex; flex-direction: column; transition: box-shadow 0.15s ease, transform 0.15s ease; }
 .card[hidden] { display: none; }
-.card:hover { box-shadow: 0 10px 28px -14px rgba(15, 29, 43, 0.35); transform: translateY(-2px); }
+.card:hover { box-shadow: 0 14px 30px -14px rgba(0, 0, 0, 0.7); transform: translateY(-2px); }
 @media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
 .track-chip { font-size: 0.8125rem; font-weight: 700; color: var(--t); background: var(--t-tint); border-radius: 999px; padding: 0.2rem 0.65rem; }
 .card-media { margin: -1.35rem -1.35rem 1.1rem; border-radius: 0; aspect-ratio: 16 / 9; overflow: hidden; border-bottom: 1px solid var(--rule); border-radius: var(--radius) var(--radius) 0 0; background: var(--paper); }
@@ -227,8 +199,7 @@ p { margin: 0 0 1em; }
   border: 1.5px solid var(--rule); border-radius: 999px; padding: 0.4rem 0.95rem;
 }
 .filters button:hover { border-color: var(--ink); }
-.filters button[aria-pressed="true"] { background: var(--t, var(--ink)); border-color: var(--t, var(--ink)); color: #ffffff; }
-@media (prefers-color-scheme: dark) { .filters button[aria-pressed="true"] { color: #0c1620; } }
+.filters button[aria-pressed="true"] { background: var(--t, var(--accent)); border-color: var(--t, var(--accent)); color: #15100d; }
 
 /* ── Inner pages ────────────────────────────────────── */
 
@@ -322,13 +293,14 @@ p { margin: 0 0 1em; }
 
 /* ── Call to action band ─────────────────────────────── */
 
-.cta-band { color: var(--hero-text); background: linear-gradient(135deg, var(--hero-2), var(--hero-1)); padding-block: clamp(2.75rem, 6vw, 4rem); margin-top: 1rem; }
+.cta-band { color: var(--hero-text); background: radial-gradient(40rem 20rem at 0% 0%, var(--hero-glow), transparent 60%), linear-gradient(135deg, var(--hero-2), var(--hero-1)); border-block: 1px solid var(--rule); padding-block: clamp(2.75rem, 6vw, 4rem); margin-top: 1rem; }
 .cta-band h2 { color: var(--hero-text); max-width: 26ch; margin-bottom: 0.2em; }
 .cta-band .actions { margin-top: 1.5rem; }
 
 /* ── Footer ─────────────────────────────────────────── */
 
 .site-footer { background: var(--wash); border-top: 1px solid var(--rule); }
+.site-header { border-bottom-color: var(--rule); }
 .footer-inner { display: flex; justify-content: space-between; gap: 1.5rem 3rem; flex-wrap: wrap; padding-block: 2.25rem 2.75rem; font-size: 0.9375rem; }
 .footer-inner p { margin: 0 0 0.25rem; }
 .footer-name { font-weight: 700; }

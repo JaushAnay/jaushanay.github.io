@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Key results: 20 validation rules, 171 of 171 planted defects detected, 43 automated tests">
-<rect width="1600" height="900" fill="#f3faf6"/>
-<rect width="1600" height="14" fill="#008751"/><rect x="1180" width="420" height="14" fill="#f5a524"/>
-<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#008751"/></marker></defs>
-<text x="90" y="190" font-family="'Source Serif 4',Georgia,serif" font-size="64" font-weight="700" fill="#0f1d2b">Nigerian election analytics</text>
-<text x="90" y="250" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" fill="#4d5c68">A Python data-quality system that tests its own checks</text>
-<rect x="90.0" y="330.0" width="449.3" height="280.0" rx="16" fill="#ffffff" stroke="#d3ddd8" stroke-width="2"/>
-<text x="126.0" y="450" font-family="'Source Serif 4',Georgia,serif" font-size="88" font-weight="700" fill="#0f1d2b" text-anchor="start">20</text>
-<text x="126.0" y="510" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#0f1d2b" text-anchor="start">validation rules</text>
-<text x="126.0" y="552" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="400" fill="#4d5c68" text-anchor="start">across six categories</text>
-<rect x="575.3" y="330.0" width="449.3" height="280.0" rx="16" fill="#e0f4ea" stroke="#008751" stroke-width="3"/>
-<text x="611.3" y="450" font-family="'Source Serif 4',Georgia,serif" font-size="88" font-weight="700" fill="#008751" text-anchor="start">171 / 171</text>
-<text x="611.3" y="510" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#0f1d2b" text-anchor="start">planted defects detected</text>
-<text x="611.3" y="552" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="400" fill="#4d5c68" text-anchor="start">with no false positives</text>
-<rect x="1060.7" y="330.0" width="449.3" height="280.0" rx="16" fill="#ffffff" stroke="#d3ddd8" stroke-width="2"/>
-<text x="1096.7" y="450" font-family="'Source Serif 4',Georgia,serif" font-size="88" font-weight="700" fill="#0f1d2b" text-anchor="start">43</text>
-<text x="1096.7" y="510" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#0f1d2b" text-anchor="start">automated tests</text>
-<text x="1096.7" y="552" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="400" fill="#4d5c68" text-anchor="start">plus 6 executed notebooks</text>
-<text x="90" y="720" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="400" fill="#4d5c68" text-anchor="start">Synthetic results with fictional parties. Real reference data only: states, zones, LGA counts and INEC polling units.</text>
+<rect width="1600" height="900" fill="#1b1511"/>
+<rect width="1600" height="14" fill="#3ad48e"/><rect x="1180" width="420" height="14" fill="#e7c9a0"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#3ad48e"/></marker></defs>
+<text x="90" y="190" font-family="'Source Serif 4',Georgia,serif" font-size="64" font-weight="700" fill="#f1e9e1">Nigerian election analytics</text>
+<text x="90" y="250" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" fill="#b9ab9e">A Python data-quality system that tests its own checks</text>
+<rect x="90.0" y="330.0" width="449.3" height="280.0" rx="16" fill="#261e18" fill-opacity="1" stroke="#433529" stroke-width="2"/>
+<text x="126.0" y="450" font-family="'Source Serif 4',Georgia,serif" font-size="88" font-weight="700" fill="#f1e9e1" text-anchor="start">20</text>
+<text x="126.0" y="510" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#f1e9e1" text-anchor="start">validation rules</text>
+<text x="126.0" y="552" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="400" fill="#b9ab9e" text-anchor="start">across six categories</text>
+<rect x="575.3" y="330.0" width="449.3" height="280.0" rx="16" fill="#3ad48e" fill-opacity="0.16" stroke="#3ad48e" stroke-width="3"/>
+<text x="611.3" y="450" font-family="'Source Serif 4',Georgia,serif" font-size="88" font-weight="700" fill="#3ad48e" text-anchor="start">171 / 171</text>
+<text x="611.3" y="510" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#f1e9e1" text-anchor="start">planted defects detected</text>
+<text x="611.3" y="552" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="400" fill="#b9ab9e" text-anchor="start">with no false positives</text>
+<rect x="1060.7" y="330.0" width="449.3" height="280.0" rx="16" fill="#261e18" fill-opacity="1" stroke="#433529" stroke-width="2"/>
+<text x="1096.7" y="450" font-family="'Source Serif 4',Georgia,serif" font-size="88" font-weight="700" fill="#f1e9e1" text-anchor="start">43</text>
+<text x="1096.7" y="510" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#f1e9e1" text-anchor="start">automated tests</text>
+<text x="1096.7" y="552" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="400" fill="#b9ab9e" text-anchor="start">plus 6 executed notebooks</text>
+<text x="90" y="720" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="400" fill="#b9ab9e" text-anchor="start">Synthetic results with fictional parties. Real reference data only: states, zones, LGA counts and INEC polling units.</text>
 </svg>
