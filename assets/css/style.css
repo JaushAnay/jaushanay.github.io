@@ -3,34 +3,36 @@
    Colours live in the two blocks below (light, then dark).
    ────────────────────────────────────────────────────────── */
 
-/* ── Colours: Espresso & Cream ───────────────────────
-   The whole site is dark. brand = caramel, accent = cream.
-   Each area of work has its own colour (--c-...).       */
+/* ── Colours ─────────────────────────────────────────
+   Palette: #0E2F3D deep teal · #A1CAC2 seafoam · #A9B9B8 sage grey
+            #D6EAED ice · #2D2D2D charcoal
+   Change a hex code here and the whole site follows.     */
 :root {
-  --paper: #15100d;
-  --wash: #100b08;
-  --surface: #1e1814;
-  --ink: #f1e9e1;
-  --muted: #b3a69a;
-  --rule: #352b24;
-  --brand: #d9a36b;
-  --brand-ink: #e8b98a;
-  --brand-tint: rgba(217, 163, 107, 0.14);
-  --accent: #e7c9a0;
-  --accent-text: #22170b;
-  --on-brand: #22170b;
-  --hero-1: #120c09;
-  --hero-2: #3a2a1f;
-  --hero-glow: rgba(231, 201, 160, 0.18);
+  --paper: #0E2F3D;          /* page background */
+  --surface: #133847;        /* cards and panels (a shade lighter than the page) */
+  --wash: #2D2D2D;           /* footer */
+  --ink: #D6EAED;            /* main text */
+  --muted: #A9B9B8;          /* secondary text */
+  --rule: #24505f;           /* lines and borders */
+  --brand: #A1CAC2;          /* links, active menu item, outlines */
+  --brand-ink: #A1CAC2;
+  --brand-tint: rgba(161, 202, 194, 0.14);
+  --accent: #A1CAC2;         /* highlighted word and main buttons */
+  --accent-text: #0E2F3D;    /* text on the main buttons */
+  --on-brand: #0E2F3D;
+  --hero-1: #2D2D2D;         /* banner gradient, start */
+  --hero-2: #0E2F3D;         /* banner gradient, end */
+  --hero-glow: rgba(161, 202, 194, 0.16);
   --hero-text: #ffffff;
-  --hero-muted: #d6c6b6;
-  --pending: #f0b765;
-  --pending-tint: rgba(240, 183, 101, 0.15);
+  --hero-muted: #D6EAED;
+  --pending: #f2c27a;
+  --pending-tint: rgba(242, 194, 122, 0.14);
 
-  --c-data-quality: #3ad48e;  --c-data-quality-tint: rgba(58, 212, 142, 0.15);
-  --c-analytics: #6ea8ff;     --c-analytics-tint: rgba(110, 168, 255, 0.15);
-  --c-data-engineering: #b38cff; --c-data-engineering-tint: rgba(179, 140, 255, 0.16);
-  --c-ai-automation: #ff9550; --c-ai-automation-tint: rgba(255, 149, 80, 0.16);
+  /* The four areas of work */
+  --c-data-quality: #7fd9ad;  --c-data-quality-tint: rgba(127, 217, 173, 0.14);
+  --c-analytics: #8fbcff;     --c-analytics-tint: rgba(143, 188, 255, 0.14);
+  --c-data-engineering: #c4a8ff; --c-data-engineering-tint: rgba(196, 168, 255, 0.15);
+  --c-ai-automation: #ffb07a; --c-ai-automation-tint: rgba(255, 176, 122, 0.15);
 
   --sans: "Public Sans", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
   --serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
@@ -96,7 +98,7 @@ p { margin: 0 0 1em; }
 .site-header { border-bottom: 1px solid var(--rule); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem 2rem; padding-block: 1.1rem; flex-wrap: wrap; }
 .brand { display: inline-flex; align-items: center; gap: 0.55rem; font-weight: 700; color: var(--ink); text-decoration: none; font-size: 1.0625rem; letter-spacing: -0.005em; }
-.brand-mark { width: 1.35rem; height: 1.35rem; border-radius: 6px; background: linear-gradient(135deg, var(--brand) 0 55%, var(--accent) 55% 100%); flex: none; }
+.brand-mark { width: 1.35rem; height: 1.35rem; border-radius: 6px; background: linear-gradient(135deg, #A1CAC2 0 55%, #D6EAED 55% 100%); flex: none; }
 .site-header { background: var(--paper); position: sticky; top: 0; z-index: 5; }
 .nav { display: flex; align-items: center; gap: 0.25rem 1.4rem; flex-wrap: wrap; font-size: 0.9375rem; }
 .nav a { color: var(--muted); text-decoration: none; padding-block: 0.25rem; }
@@ -122,7 +124,7 @@ p { margin: 0 0 1em; }
 }
 .button:hover { transform: translateY(-1px); }
 .button-primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
-.button-primary:hover { background: #f2dbb9; border-color: #f2dbb9; }
+.button-primary:hover { background: #D6EAED; border-color: #D6EAED; }
 .button-light { border-color: currentColor; color: inherit; background: transparent; }
 .button-light:hover { background: rgba(255, 255, 255, 0.08); }
 .button-link { border-color: transparent; color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
@@ -199,7 +201,7 @@ p { margin: 0 0 1em; }
   border: 1.5px solid var(--rule); border-radius: 999px; padding: 0.4rem 0.95rem;
 }
 .filters button:hover { border-color: var(--ink); }
-.filters button[aria-pressed="true"] { background: var(--t, var(--accent)); border-color: var(--t, var(--accent)); color: #15100d; }
+.filters button[aria-pressed="true"] { background: var(--t, var(--accent)); border-color: var(--t, var(--accent)); color: #0E2F3D; }
 
 /* ── Inner pages ────────────────────────────────────── */
 

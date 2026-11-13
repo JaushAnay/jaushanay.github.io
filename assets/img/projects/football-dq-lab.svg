@@ -1,48 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Football DQ Lab pipeline: ingest, validate, detect, classify, track, resolve, report">
-<rect width="1600" height="900" fill="#1b1511"/>
-<rect width="1600" height="14" fill="#3ad48e"/><rect x="1180" width="420" height="14" fill="#e7c9a0"/>
-<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#3ad48e"/></marker></defs>
-<text x="90" y="190" font-family="'Source Serif 4',Georgia,serif" font-size="64" font-weight="700" fill="#f1e9e1">Football DQ Lab</text>
-<text x="90" y="250" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" fill="#b9ab9e">The life of a data-quality issue, from raw record to report</text>
-<rect x="90.0" y="380.0" width="172.0" height="230.0" rx="16" fill="#261e18" fill-opacity="1" stroke="#433529" stroke-width="2"/>
-<text x="110.0" y="436" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#f1e9e1" text-anchor="start">Ingest</text>
-<text x="110.0" y="482" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">Load raw</text>
-<text x="110.0" y="514" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">records into</text>
-<text x="110.0" y="546" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">PostgreSQL</text>
-<path d="M266.0 495.0H290.0" stroke="#3ad48e" stroke-width="3" marker-end="url(#a)"/>
-<rect x="298.0" y="380.0" width="172.0" height="230.0" rx="16" fill="#261e18" fill-opacity="1" stroke="#433529" stroke-width="2"/>
-<text x="318.0" y="436" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#f1e9e1" text-anchor="start">Validate</text>
-<text x="318.0" y="482" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">Run the</text>
-<text x="318.0" y="514" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">rules on</text>
-<text x="318.0" y="546" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">every record</text>
-<path d="M474.0 495.0H498.0" stroke="#3ad48e" stroke-width="3" marker-end="url(#a)"/>
-<rect x="506.0" y="380.0" width="172.0" height="230.0" rx="16" fill="#261e18" fill-opacity="1" stroke="#433529" stroke-width="2"/>
-<text x="526.0" y="436" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#f1e9e1" text-anchor="start">Detect</text>
-<text x="526.0" y="482" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">Flag records</text>
-<text x="526.0" y="514" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">that break</text>
-<text x="526.0" y="546" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">a rule</text>
-<path d="M682.0 495.0H706.0" stroke="#3ad48e" stroke-width="3" marker-end="url(#a)"/>
-<rect x="714.0" y="380.0" width="172.0" height="230.0" rx="16" fill="#261e18" fill-opacity="1" stroke="#433529" stroke-width="2"/>
-<text x="734.0" y="436" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#f1e9e1" text-anchor="start">Classify</text>
-<text x="734.0" y="482" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">Label each</text>
-<text x="734.0" y="514" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">issue's type</text>
-<text x="734.0" y="546" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">and severity</text>
-<path d="M890.0 495.0H914.0" stroke="#3ad48e" stroke-width="3" marker-end="url(#a)"/>
-<rect x="922.0" y="380.0" width="172.0" height="230.0" rx="16" fill="#261e18" fill-opacity="1" stroke="#433529" stroke-width="2"/>
-<text x="942.0" y="436" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#f1e9e1" text-anchor="start">Track</text>
-<text x="942.0" y="482" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">Follow each</text>
-<text x="942.0" y="514" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">issue over</text>
-<text x="942.0" y="546" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">time</text>
-<path d="M1098.0 495.0H1122.0" stroke="#3ad48e" stroke-width="3" marker-end="url(#a)"/>
-<rect x="1130.0" y="380.0" width="172.0" height="230.0" rx="16" fill="#261e18" fill-opacity="1" stroke="#433529" stroke-width="2"/>
-<text x="1150.0" y="436" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#f1e9e1" text-anchor="start">Resolve</text>
-<text x="1150.0" y="482" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">Fix it and</text>
-<text x="1150.0" y="514" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">record what</text>
-<text x="1150.0" y="546" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">changed</text>
-<path d="M1306.0 495.0H1330.0" stroke="#3ad48e" stroke-width="3" marker-end="url(#a)"/>
-<rect x="1338.0" y="380.0" width="172.0" height="230.0" rx="16" fill="#3ad48e" fill-opacity="0.16" stroke="#3ad48e" stroke-width="3"/>
-<text x="1358.0" y="436" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#3ad48e" text-anchor="start">Report</text>
-<text x="1358.0" y="482" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">Show quality</text>
-<text x="1358.0" y="514" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">across the</text>
-<text x="1358.0" y="546" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#b9ab9e" text-anchor="start">database</text><text x="90" y="700" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="400" fill="#b9ab9e" text-anchor="start">Synthetic data: fictional clubs and people in real countries, about 22,000 players.</text>
+<rect width="1600" height="900" fill="#0E2F3D"/>
+<rect width="1600" height="14" fill="#7fd9ad"/><rect x="1180" width="420" height="14" fill="#A1CAC2"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#7fd9ad"/></marker></defs>
+<text x="90" y="190" font-family="'Source Serif 4',Georgia,serif" font-size="64" font-weight="700" fill="#D6EAED">Football DQ Lab</text>
+<text x="90" y="250" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" fill="#A9B9B8">The life of a data-quality issue, from raw record to report</text>
+<rect x="90.0" y="380.0" width="172.0" height="230.0" rx="16" fill="#143a4a" fill-opacity="1" stroke="#2b5a6a" stroke-width="2"/>
+<text x="110.0" y="436" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#D6EAED" text-anchor="start">Ingest</text>
+<text x="110.0" y="482" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">Load raw</text>
+<text x="110.0" y="514" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">records into</text>
+<text x="110.0" y="546" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">PostgreSQL</text>
+<path d="M266.0 495.0H290.0" stroke="#7fd9ad" stroke-width="3" marker-end="url(#a)"/>
+<rect x="298.0" y="380.0" width="172.0" height="230.0" rx="16" fill="#143a4a" fill-opacity="1" stroke="#2b5a6a" stroke-width="2"/>
+<text x="318.0" y="436" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#D6EAED" text-anchor="start">Validate</text>
+<text x="318.0" y="482" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">Run the</text>
+<text x="318.0" y="514" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">rules on</text>
+<text x="318.0" y="546" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">every record</text>
+<path d="M474.0 495.0H498.0" stroke="#7fd9ad" stroke-width="3" marker-end="url(#a)"/>
+<rect x="506.0" y="380.0" width="172.0" height="230.0" rx="16" fill="#143a4a" fill-opacity="1" stroke="#2b5a6a" stroke-width="2"/>
+<text x="526.0" y="436" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#D6EAED" text-anchor="start">Detect</text>
+<text x="526.0" y="482" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">Flag records</text>
+<text x="526.0" y="514" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">that break</text>
+<text x="526.0" y="546" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">a rule</text>
+<path d="M682.0 495.0H706.0" stroke="#7fd9ad" stroke-width="3" marker-end="url(#a)"/>
+<rect x="714.0" y="380.0" width="172.0" height="230.0" rx="16" fill="#143a4a" fill-opacity="1" stroke="#2b5a6a" stroke-width="2"/>
+<text x="734.0" y="436" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#D6EAED" text-anchor="start">Classify</text>
+<text x="734.0" y="482" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">Label each</text>
+<text x="734.0" y="514" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">issue's type</text>
+<text x="734.0" y="546" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">and severity</text>
+<path d="M890.0 495.0H914.0" stroke="#7fd9ad" stroke-width="3" marker-end="url(#a)"/>
+<rect x="922.0" y="380.0" width="172.0" height="230.0" rx="16" fill="#143a4a" fill-opacity="1" stroke="#2b5a6a" stroke-width="2"/>
+<text x="942.0" y="436" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#D6EAED" text-anchor="start">Track</text>
+<text x="942.0" y="482" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">Follow each</text>
+<text x="942.0" y="514" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">issue over</text>
+<text x="942.0" y="546" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">time</text>
+<path d="M1098.0 495.0H1122.0" stroke="#7fd9ad" stroke-width="3" marker-end="url(#a)"/>
+<rect x="1130.0" y="380.0" width="172.0" height="230.0" rx="16" fill="#143a4a" fill-opacity="1" stroke="#2b5a6a" stroke-width="2"/>
+<text x="1150.0" y="436" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#D6EAED" text-anchor="start">Resolve</text>
+<text x="1150.0" y="482" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">Fix it and</text>
+<text x="1150.0" y="514" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">record what</text>
+<text x="1150.0" y="546" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">changed</text>
+<path d="M1306.0 495.0H1330.0" stroke="#7fd9ad" stroke-width="3" marker-end="url(#a)"/>
+<rect x="1338.0" y="380.0" width="172.0" height="230.0" rx="16" fill="#7fd9ad" fill-opacity="0.16" stroke="#7fd9ad" stroke-width="3"/>
+<text x="1358.0" y="436" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#7fd9ad" text-anchor="start">Report</text>
+<text x="1358.0" y="482" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">Show quality</text>
+<text x="1358.0" y="514" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">across the</text>
+<text x="1358.0" y="546" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="400" fill="#A9B9B8" text-anchor="start">database</text><text x="90" y="700" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="400" fill="#A9B9B8" text-anchor="start">Synthetic data: fictional clubs and people in real countries, about 22,000 players.</text>
 </svg>
