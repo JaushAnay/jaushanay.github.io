@@ -6,8 +6,8 @@
 title: Joshua Anayochukwu
 tagline: Data Validation Specialist | Data Quality & Analytics | AI Evaluation & Automation
 description: >-
-  Data validation specialist in Kano, Nigeria. I check, correct and maintain
-  high-volume data, and build analytics, pipelines and automations on top of it.
+  Data professional in Kano, Nigeria. Data Validation Specialist at Sportmonks,
+  working across data validation, data analysis, data engineering and AI automation.
 
 url: "https://jaushanay.github.io"
 baseurl: ""
@@ -27,6 +27,7 @@ links:
   github: https://github.com/JaushAnay
   x: https://x.com/JaushAnay
   upwork: ""
+  medium: https://medium.com/@JaushAnay
 
 # Your CV: upload the PDF to assets/ and write its path, e.g. /assets/Joshua_Anayochukwu_CV.pdf
 cv_file: ""

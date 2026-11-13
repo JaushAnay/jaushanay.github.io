@@ -5,8 +5,9 @@ title: Project name
 summary: One sentence describing the problem this project solves.
 status: in-progress        # in-progress, completed or ongoing
 role: Solo project
-tracks: [data-quality]     # any of: data-quality, analytics, data-engineering, ai-automation
-tools: [SQL, PostgreSQL]
+tracks: [analytics]        # any of: data-quality, analytics, data-engineering, ai-automation (first one sets the colour)
+tools: [Excel, Power BI]
+skills: [Data cleaning, Dashboard design]
 data_note: Synthetic data  # or "Public data", or delete this line
 repo: ""                   # link to the GitHub repository, or leave ""
 dashboard: ""              # link to a NovyPro / Tableau / other dashboard, or leave ""

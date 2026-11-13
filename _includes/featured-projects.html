@@ -1,0 +1,4 @@
+<div class="cards cards-wide">
+{%- assign featured = site.projects | where: "featured", true | sort: "order" -%}
+{%- for p in featured -%}{% include project-card.html project=p %}{%- endfor -%}
+</div>

@@ -20,13 +20,16 @@ Open a file on github.com, click the pencil icon, change it, and click **Commit 
 | Name, email, links, CV, photo, "Now" date | `_config.yml` |
 | Home page headline and intro | `index.html` (top section) |
 | About story and education | `about.md` |
-| Skills and their levels | `_data/skills.yml` |
+| Skills and tools, by area | `_data/skills.yml` |
+| The four areas of work | `_data/tracks.yml` |
 | Jobs | `_data/experience.yml` |
 | Certifications and courses | `_data/learning.yml` |
 | Services and how you work | `contact.md` |
 | What you're doing now | `now.md` |
 | A project | its file in `_projects/` |
-| Colours and fonts | `assets/css/style.css` (top of file) |
+| Colours and fonts | `assets/css/style.css` (the Colours block at the top) |
+
+**Finish a project:** in its file, change `status: in-progress` to `status: completed`. On the Meridian Mart and Kadara Pay pages this also reveals their Results and Limitations sections, so first check every number there against your own run.
 
 **Add a project:** copy `templates/new-project.md` into `_projects/`, give it a new name such as `_projects/hospital-dashboard.md`, and fill it in. Set `featured: true` on the three projects you want on the home page.
 

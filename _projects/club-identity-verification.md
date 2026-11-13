@@ -4,7 +4,8 @@ summary: How I keep rebranded, relocated and reserve-team clubs from being merge
 status: ongoing
 role: Data Validation Specialist, Sportmonks
 tracks: [data-quality]
-tools: [Authoritative source research, Excel, Google Sheets, AI-assisted research]
+tools: [Excel, Google Sheets, AI-assisted research]
+skills: [Entity and identity resolution, Source verification, Weighing conflicting sources, Transliteration matching, Decision documentation]
 data_note: Professional work, described as method only
 cover: /assets/img/projects/club-identity-verification.svg
 cover_alt: "Five steps of the club identity method: compare, source, weigh, variants, record"

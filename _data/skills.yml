@@ -1,23 +1,69 @@
-# Three honest levels. Move a skill up as your projects prove it.
-- level: Use professionally
-  note: Part of my daily paid work.
-  items:
-    - Data validation and quality assurance
+# Skills and tools, grouped by area. "track" must match an id in _data/tracks.yml.
+# Add or remove lines freely; the About page and home page update themselves.
+- track: analytics
+  name: Data Analysis
+  skills:
+    - Business questions and KPI design
+    - Exploratory and descriptive analysis
+    - Dimensional modelling (star schema)
+    - DAX measures and time intelligence
+    - Customer, cohort and RFM analysis
+    - Dashboard design and data storytelling
+    - Executive summaries and recommendations
+  tools:
+    - Excel
+    - Power Query
+    - Power Pivot
+    - Power BI
+    - SQL (PostgreSQL)
+    - Python (pandas, Jupyter)
+- track: data-quality
+  name: Data Validation
+  skills:
+    - Data quality frameworks (completeness, uniqueness, validity, integrity, consistency, plausibility)
     - Entity and identity resolution
     - Source verification and fact-checking
     - Data cleaning and standardisation
-    - AI response evaluation
-    - Excel and Google Sheets (pivot tables, lookups, logical functions)
-    - Slack and Google Workspace
-- level: Building projects with
-  note: Used in the projects on this site, growing with each one.
-  items:
-    - SQL on PostgreSQL (filtering, joins, aggregation)
-    - Power BI
+    - Reconciliation to control totals
+    - Audit trails, quarantine and correction logs
+    - Measuring rule precision and recall
+  tools:
+    - SQL (PostgreSQL)
+    - Python (pandas, pytest)
+    - Great Expectations
+    - Excel and Google Sheets
     - Power Query
-    - n8n workflow automation (self-hosted on Render)
-    - Prompt writing for AI-assisted research
-- level: Learning
-  note: Early stages, with projects planned.
-  items:
+- track: data-engineering
+  name: Data Engineering
+  skills:
+    - Batch ELT and ETL pipelines
+    - Incremental loads, watermarks and backfills
+    - Idempotent ingestion and file de-duplication
+    - API extraction with pagination and retries
+    - Relational and dimensional modelling (3NF, star schema, type 2 dimensions)
+    - Data testing, reconciliation and monitoring
+    - Orchestration and continuous integration
+  tools:
+    - Python
+    - PostgreSQL
+    - dbt
+    - Apache Airflow
+    - Docker
+    - Great Expectations
+    - GitHub Actions
+    - BigQuery
+- track: ai-automation
+  name: AI Automation
+  skills:
+    - Workflow automation design
+    - API and webhook integrations
+    - OAuth and credential setup
+    - Human-in-the-loop review flows
+    - AI output evaluation (accuracy, relevance, completeness, instruction adherence)
+    - Prompt design for research and analysis
+  tools:
+    - n8n
+    - Render
     - Supabase
+    - Google Sheets and Google Cloud
+    - Large language model tools

@@ -3,14 +3,15 @@ title: Football DQ Lab
 summary: A SQL data-quality system that ingests a deliberately imperfect football database, then detects, classifies, tracks and resolves its errors.
 status: in-progress
 role: Solo project
-tracks: [data-quality, data-engineering]
+tracks: [data-quality, analytics]
 tools: [PostgreSQL, SQL]
+skills: [Database design, Synthetic data design, Validation rule design, Issue classification and tracking, Data quality reporting]
 data_note: Synthetic data, designed with deliberate errors
 repo: ""
 cover: /assets/img/projects/football-dq-lab.svg
 cover_alt: "Football DQ Lab pipeline: ingest, validate, detect, classify, track, resolve and report"
 featured: false
-order: 5
+order: 7
 ---
 
 ## Why I'm building it

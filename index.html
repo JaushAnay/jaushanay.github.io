@@ -3,14 +3,14 @@ layout: default
 title: Data quality, analytics and AI evaluation
 description: Joshua Anayochukwu is a data validation specialist in Kano, Nigeria, working across data quality, analytics, data engineering and AI evaluation.
 ---
-<section class="hero wrap">
-  <div class="hero-text">
-    <h1 class="hero-title">I make data trustworthy, then make it useful.</h1>
-    <p class="hero-lede">I'm Joshua Anayochukwu, a data validation specialist at Sportmonks. Every day I check football records against authoritative sources before customers rely on them. I'm building on that with analytics, data pipelines, and AI evaluation and automation.</p>
+<section class="hero-band">
+  <div class="wrap hero">
+    <h1 class="hero-title">I make data <span class="hl">trustworthy</span>, then make it useful.</h1>
+    <p class="hero-lede">I’m Joshua Anayochukwu, a data professional based in Kano, Nigeria. As a Data Validation Specialist at Sportmonks, a global sports data provider, I verify the fixtures, teams, players and officials that customers depend on before anyone builds an analysis on them.</p>
     <div class="actions">
       <a class="button button-primary" href="{{ '/projects/' | relative_url }}">See my projects</a>
-      <a class="button" href="{{ '/contact/' | relative_url }}">Work with me</a>
-      {% if site.cv_file != "" %}<a class="button button-quiet" href="{{ site.cv_file | relative_url }}">Download CV (PDF)</a>{% endif %}
+      <a class="button button-light" href="{{ '/contact/' | relative_url }}">Work with me</a>
+      {% if site.cv_file != "" %}<a class="button button-link" href="{{ site.cv_file | relative_url }}">Download CV (PDF)</a>{% endif %}
     </div>
   </div>
 </section>
@@ -21,10 +21,12 @@ description: Joshua Anayochukwu is a data validation specialist in Kano, Nigeria
     {% for t in site.data.tracks %}
       {% assign n = 0 %}
       {% for p in site.projects %}{% if p.tracks contains t.id %}{% assign n = n | plus: 1 %}{% endif %}{% endfor %}
-      <li class="track">
+      {% assign g = site.data.skills | where: "track", t.id | first %}
+      <li class="track t-{{ t.id }}">
         <h3><a href="{{ '/projects/' | relative_url }}#{{ t.id }}">{{ t.name }}</a></h3>
         <p>{{ t.line }}</p>
-        <p class="muted">{{ n }} project{% if n != 1 %}s{% endif %}</p>
+        {% if g %}<ul class="tool-chips">{% for tool in g.tools limit:5 %}<li>{{ tool }}</li>{% endfor %}</ul>{% endif %}
+        <p class="muted track-count">{{ n }} project{% if n != 1 %}s{% endif %}</p>
       </li>
     {% endfor %}
   </ul>
@@ -59,6 +61,12 @@ description: Joshua Anayochukwu is a data validation specialist in Kano, Nigeria
   {% endif %}
 </section>
 
-<section class="wrap section">
-  {% include closing-cta.html %}
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Need data checked, cleaned, analysed or automated?</h2>
+    <div class="actions">
+      <a class="button button-primary" href="{{ '/contact/' | relative_url }}">See how I can help</a>
+      <a class="button button-light" href="mailto:{{ site.author.email }}">Email me</a>
+    </div>
+  </div>
 </section>

@@ -1,21 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="n8n self-hosted on Render, connected to Google Sheets through a Google Cloud OAuth client">
-<rect width="1600" height="900" fill="#f4f6f3"/>
-<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#55636c"/></marker></defs>
-<text x="90" y="190" font-family="'Source Serif 4',Georgia,serif" font-size="64" font-weight="700" fill="#17232b">Self-hosted automation stack</text>
-<text x="90" y="250" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" fill="#55636c">Where the automation runs, and how it reaches the data</text>
-<rect x="90" y="330" width="760" height="350" rx="20" fill="none" stroke="#c9d2cc" stroke-width="2" stroke-dasharray="10 8"/>
-<text x="120" y="372" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="700" fill="#55636c">Render (hosting)</text>
-<rect x="140" y="410" width="660" height="230" rx="16" fill="#ffffff" stroke="#c9d2cc" stroke-width="2"/>
-<text x="170" y="472" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="34" font-weight="700" fill="#17232b">Self-hosted n8n</text>
-<text x="170" y="522" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" fill="#55636c">Workflows I build and run</text>
-<text x="170" y="558" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" fill="#55636c">on my own instance</text>
-<text x="1000" y="472" text-anchor="middle" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="24" fill="#55636c">My own Google Cloud</text>
-<text x="1000" y="502" text-anchor="middle" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="24" fill="#55636c">OAuth client</text>
-<path d="M854 530H1146" stroke="#55636c" stroke-width="2.5" marker-end="url(#a)"/>
-<path d="M1146 560H854" stroke="#55636c" stroke-width="2.5" marker-end="url(#a)"/>
-<rect x="1150" y="410" width="360" height="230" rx="16" fill="#e2f0e7" stroke="#1e7348" stroke-width="3"/>
-<text x="1180" y="472" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="34" font-weight="700" fill="#17232b">Google Sheets</text>
-<text x="1180" y="522" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" fill="#55636c">Read and write</text>
-<text x="1180" y="558" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" fill="#55636c">data</text>
-<text x="90" y="750" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" fill="#55636c">Built during The AI Colony’s 8-week AI Automation course, which also introduced Supabase.</text>
+<rect width="1600" height="900" fill="#fef6f1"/>
+<rect width="1600" height="14" fill="#e2580b"/><rect x="1180" width="420" height="14" fill="#f5a524"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#e2580b"/></marker></defs>
+<text x="90" y="190" font-family="'Source Serif 4',Georgia,serif" font-size="64" font-weight="700" fill="#0f1d2b">Self-hosted automation stack</text>
+<text x="90" y="250" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="30" fill="#4d5c68">Where the automation runs, and how it reaches the data</text>
+<rect x="90" y="330" width="760" height="350" rx="20" fill="none" stroke="#e2580b" stroke-width="2" stroke-dasharray="10 8"/>
+<text x="120" y="372" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="700" fill="#e2580b" text-anchor="start">Render (hosting)</text>
+<rect x="140.0" y="410.0" width="660.0" height="230.0" rx="16" fill="#ffffff" stroke="#d3ddd8" stroke-width="2"/>
+<text x="170" y="472" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="34" font-weight="700" fill="#0f1d2b" text-anchor="start">Self-hosted n8n</text>
+<text x="170" y="522" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="400" fill="#4d5c68" text-anchor="start">Workflows I build and run</text>
+<text x="170" y="558" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="400" fill="#4d5c68" text-anchor="start">on my own instance</text>
+<text x="1000" y="472" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="24" font-weight="400" fill="#4d5c68" text-anchor="middle">My own Google Cloud</text>
+<text x="1000" y="502" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="24" font-weight="400" fill="#4d5c68" text-anchor="middle">OAuth client</text>
+<path d="M854.0 530.0H1146.0" stroke="#e2580b" stroke-width="3" marker-end="url(#a)"/>
+<path d="M1146 560H862" stroke="#e2580b" stroke-width="3" marker-end="url(#a)"/>
+<rect x="1150.0" y="410.0" width="360.0" height="230.0" rx="16" fill="#fdeadf" stroke="#e2580b" stroke-width="3"/>
+<text x="1180" y="472" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="34" font-weight="700" fill="#e2580b" text-anchor="start">Google Sheets</text>
+<text x="1180" y="522" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="400" fill="#4d5c68" text-anchor="start">Read and write</text>
+<text x="1180" y="558" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="400" fill="#4d5c68" text-anchor="start">data</text>
+<text x="90" y="750" font-family="'Public Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="400" fill="#4d5c68" text-anchor="start">Built during The AI Colony’s 8-week AI Automation course, which also introduced Supabase.</text>
 </svg>

@@ -1,11 +1,13 @@
-{% assign p = include.project %}
-<article class="card" data-tracks="{{ p.tracks | join: ' ' }}">
+{%- assign p = include.project -%}
+{%- assign main = p.tracks | first -%}
+{%- assign tr = site.data.tracks | where: "id", main | first -%}
+<article class="card t-{{ main }}" data-tracks="{{ p.tracks | join: ' ' }}">
   {% if p.cover and p.cover != "" %}<div class="card-media"><img src="{{ p.cover | relative_url }}" alt="" loading="lazy"></div>{% endif %}
   <div class="card-top">
+    <span class="track-chip">{{ tr.name }}</span>
     {% include status.html status=p.status %}
-    {% if p.data_note %}<span class="data-note">{{ p.data_note }}</span>{% endif %}
   </div>
   <h3 class="card-title"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
   <p class="card-summary">{{ p.summary }}</p>
-  <p class="card-tools"><span class="visually-hidden">Tools: </span>{{ p.tools | join: ", " }}</p>
+  <p class="card-tools"><span class="visually-hidden">Tools: </span>{{ p.tools | join: " · " }}</p>
 </article>

@@ -3,8 +3,9 @@ title: Nigerian election analytics and data quality system
 summary: A Python system that validates, cleans and analyses Nigerian election data, and proves its own checks work against 171 deliberately planted defects.
 status: completed
 role: Solo project
-tracks: [data-quality, analytics, data-engineering]
-tools: [Python, pandas, pytest, Jupyter, Excel]
+tracks: [data-quality, analytics]
+tools: [Python, pandas, Jupyter, pytest, Excel]
+skills: [Data quality rule design, Relational data design, Cleaning with an audit trail, Precision and recall evaluation, Election metrics, Sensitivity analysis, Automated testing]
 data_note: Synthetic results with fictional parties; real reference data only
 repo: ""
 cover: /assets/img/projects/nigerian-election-analytics.svg

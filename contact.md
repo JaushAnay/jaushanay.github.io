@@ -27,6 +27,7 @@ The quickest way to reach me is email: [{{ site.author.email }}](mailto:{{ site.
 
 {% if site.links.linkedin != "" %}- [LinkedIn]({{ site.links.linkedin }})
 {% endif %}{% if site.links.github != "" %}- [GitHub]({{ site.links.github }})
+{% endif %}{% if site.links.medium != "" %}- [Medium]({{ site.links.medium }})
 {% endif %}{% if site.links.upwork != "" %}- [Upwork]({{ site.links.upwork }})
 {% endif %}{% if site.links.x != "" %}- [X]({{ site.links.x }})
 {% endif %}{% if site.cv_file != "" %}- [Download my CV (PDF)]({{ site.cv_file | relative_url }})

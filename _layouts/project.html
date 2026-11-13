@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<article class="wrap page">
+{% assign main = page.tracks | first %}
+<article class="wrap page t-{{ main }}">
   <header class="page-head">
     <p class="muted"><a href="{{ '/projects/' | relative_url }}">Projects</a></p>
     <h1>{{ page.title }}</h1>
@@ -18,9 +19,10 @@ layout: default
     <div><dt>Status</dt><dd>{% include status.html status=page.status %}</dd></div>
     {% if page.role %}<div><dt>My role</dt><dd>{{ page.role }}</dd></div>{% endif %}
     <div><dt>Areas</dt><dd>
-      {% for t in page.tracks %}{% assign tr = site.data.tracks | where: "id", t | first %}<a class="tag" href="{{ '/projects/' | relative_url }}#{{ t }}">{{ tr.name }}</a>{% endfor %}
+      {% for t in page.tracks %}{% assign tr = site.data.tracks | where: "id", t | first %}<a class="tag t-{{ t }}" href="{{ '/projects/' | relative_url }}#{{ t }}">{{ tr.name }}</a>{% endfor %}
     </dd></div>
     <div><dt>Tools</dt><dd>{{ page.tools | join: ", " }}</dd></div>
+    {% if page.skills %}<div><dt>Skills</dt><dd>{{ page.skills | join: ", " }}</dd></div>{% endif %}
     {% if page.data_note %}<div><dt>Data</dt><dd>{{ page.data_note }}</dd></div>{% endif %}
     {% assign has_repo = false %}{% if page.repo and page.repo != "" %}{% assign has_repo = true %}{% endif %}
     {% assign has_dash = false %}{% if page.dashboard and page.dashboard != "" %}{% assign has_dash = true %}{% endif %}

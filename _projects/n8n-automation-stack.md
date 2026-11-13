@@ -3,12 +3,13 @@ title: Self-hosted n8n automation stack
 summary: A self-hosted n8n instance on Render, connected to Google Sheets through my own Google Cloud OAuth client.
 status: completed
 role: Built during The AI Colony's 8-week AI Automation course
-tracks: [ai-automation, data-engineering]
+tracks: [ai-automation]
 tools: [n8n, Render, Google Sheets, Google Cloud OAuth, Supabase]
+skills: [Self-hosting, OAuth and credential setup, Workflow automation, API integration]
 cover: /assets/img/projects/n8n-automation-stack.svg
 cover_alt: "n8n self-hosted on Render, connected to Google Sheets through a Google Cloud OAuth client"
 featured: true
-order: 3
+order: 6
 ---
 
 ## What I built

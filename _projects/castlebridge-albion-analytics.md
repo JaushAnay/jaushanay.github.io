@@ -5,11 +5,12 @@ status: in-progress
 role: Solo project
 tracks: [analytics]
 tools: [Excel, Power Query, Power BI]
+skills: [Financial and operational analysis, Data cleaning and modelling, KPI design, Dashboard design]
 data_note: Synthetic data for a fictional club
 dashboard: ""
 cover: ""
 featured: false
-order: 7
+order: 9
 ---
 
 ## Why I'm building it

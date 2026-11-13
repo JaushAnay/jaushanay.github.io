@@ -5,12 +5,13 @@ status: in-progress
 role: Solo project
 tracks: [data-quality, analytics]
 tools: [PostgreSQL, SQL, Power BI]
+skills: [Healthcare data analysis, SQL data quality checks, Data cleaning, Dashboard design]
 data_note: Synthetic data, no real patients
 repo: ""
 dashboard: ""
 cover: ""
 featured: false
-order: 6
+order: 8
 ---
 
 ## Why I'm building it

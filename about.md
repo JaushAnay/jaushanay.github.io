@@ -1,33 +1,25 @@
 ---
 title: About
-intro: Data validation specialist in Kano, Nigeria, working across data quality, analytics, data engineering and AI evaluation.
-description: About Joshua Anayochukwu, data validation specialist working across data quality, analytics, data engineering and AI evaluation.
+description: Joshua Anayochukwu is a data professional in Kano, Nigeria, working across data validation, data analysis, data engineering and AI automation.
 ---
 
 {% if site.author.photo != "" %}<img class="portrait" src="{{ site.author.photo | relative_url }}" alt="Portrait of {{ site.author.short_name }}">{% endif %}
 
-## How I got here
+I’m Joshua Anayochukwu, a data professional based in Kano, Nigeria. As a Data Validation Specialist at Sportmonks, a global sports data provider, I verify the fixtures, teams, players and officials that customers depend on before anyone builds an analysis on them. That work taught me something most dashboards hide: an insight is only as good as the data underneath it. I care about what data says, and even more about whether it deserves to be believed.
 
-I studied Public Administration at Ahmadu Bello University, graduating with Second Class Upper in 2023. The degree taught me to think about process, accountability and records: who is responsible for information, how it is kept, and what happens when it is wrong.
+My work sits where four disciplines meet. Validation is my foundation: systematic checks, careful research, and the patience to chase down the one record that doesn’t add up. Analytics is where clean data becomes answers, and I use Excel, SQL and Power BI to find patterns and explain them plainly. Data engineering is the skill I’m actively building, learning through portfolio projects how pipelines and PostgreSQL databases keep data reliable as it moves and grows. AI automation, which I’m exploring with tools like n8n and Supabase, is how I want to take repetitive checking off people’s plates.
 
-My first jobs put that into practice. In a state ministry I kept office records and supported documentation for government programmes. In retail I recorded high volumes of transactions and kept inventory accurate. Then, in February 2026, I joined Sportmonks as a data validation specialist, checking football data for customers around the world.
+Together, these add up to one idea: data has to be trustworthy before it can be useful. I want to build systems that catch problems early, run without constant hand-holding, and give decision-makers numbers they don’t have to second-guess. {% if site.links.medium != "" %}[I also write]({{ site.links.medium }}){% else %}I also write{% endif %}, so I care about explaining technical work in language people actually use. The projects below show where I am today. The direction is simple: get the data right, and everything built on it gets better.
 
-That work is where data quality became my profession. A single wrongly merged club can corrupt every fixture, lineup and statistic attached to it, so I've learned to verify carefully, weigh conflicting sources, and record why each decision was made.
+## Selected projects
 
-## Where I'm going
+{% include featured-projects.html %}
 
-I'm building outward from that core. Analytics turns validated data into decisions. Data engineering puts validation rules into pipelines so they run automatically. AI evaluation and automation apply the same discipline to AI output and routine data work. The [projects](/projects/) on this site show each step.
+[See all projects](/projects/)
 
-## Skills, by honest level
+## Skills and tools
 
-{% for group in site.data.skills %}
-### {{ group.level }}
-
-{{ group.note }}
-
-{% for s in group.items %}- {{ s }}
-{% endfor %}
-{% endfor %}
+{% include skills-grid.html %}
 
 ## Education
 
