@@ -14,6 +14,10 @@
     - Map players, referees and coaches into match lineups, update squads, and create seasons and profiles in both calendar-year and cross-year formats.
     - Investigate customer data requests and respond with verified corrections or information.
     - Review AI-generated research for factual accuracy, relevance, completeness and instruction adherence before relying on it.
+  # highlights: achievements with real numbers, shown above the responsibilities.
+  # Example (replace with your own, true figures):
+  #   - Validated about X records a week across Y competitions
+  highlights: []
   case_study: /projects/club-identity-verification/
 - role: Data Analysis and Visualization Intern
   org: Excelerate

@@ -6,18 +6,28 @@ description: Certifications, courses and training completed by Joshua Anayochukw
 <div class="wrap page">
   <header class="page-head">
     <h1>Learning</h1>
-    <p class="lede">Certifications and courses, newest first, with what each one taught me.</p>
+    <p class="lede">Certifications and courses, newest first, with what each one taught me. The <a href="{{ '/projects/' | relative_url }}">projects</a> show how I use them.</p>
   </header>
-  <ol class="learning" reversed>
-    {% for c in site.data.learning %}
-    <li>
-      <div class="learning-meta">{% if c.year != "" %}{{ c.year }}{% endif %}</div>
-      <div>
-        <h2 class="learning-name">{{ c.name }}</h2>
-        <p class="muted">{{ c.issuer }}</p>
-        {% if c.learned %}<p>{{ c.learned }}</p>{% endif %}
-      </div>
-    </li>
-    {% endfor %}
-  </ol>
+  {% assign groups = "certificate|Professional certificates,course|Courses and skill tracks,other|Other" | split: "," %}
+  {% for g in groups %}
+    {% assign gp = g | split: "|" %}
+    {% assign items = site.data.learning | where: "group", gp[0] %}
+    {% if items.size > 0 %}
+    <section class="learning-group">
+      <h2 class="group-title">{{ gp[1] }}</h2>
+      <ul class="learning">
+        {% for c in items %}
+        <li>
+          <div class="learning-meta">{% if c.year != "" %}{{ c.year }}{% endif %}</div>
+          <div>
+            <h3 class="learning-name">{{ c.name }}</h3>
+            <p class="muted">{{ c.issuer }}{% if c.url and c.url != "" %} · <a href="{{ c.url }}">Verify</a>{% endif %}</p>
+            {% if c.learned %}<p>{{ c.learned }}</p>{% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  {% endfor %}
 </div>

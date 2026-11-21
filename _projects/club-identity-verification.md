@@ -1,6 +1,7 @@
 ---
 title: Verifying football club identities at scale
 summary: How I keep rebranded, relocated and reserve-team clubs from being merged or split in a global football database.
+description: "How I keep rebranded, relocated and reserve-team clubs from being merged or split in a global football database."
 status: ongoing
 role: Data Validation Specialist, Sportmonks
 tracks: [data-quality]

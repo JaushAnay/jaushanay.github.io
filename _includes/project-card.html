@@ -10,4 +10,5 @@
   <h3 class="card-title"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
   <p class="card-summary">{{ p.summary }}</p>
   <p class="card-tools"><span class="visually-hidden">Tools: </span>{{ p.tools | join: " · " }}</p>
+  {% if p.repo and p.repo != "" %}<a class="card-code" href="{{ p.repo }}">View code on GitHub</a>{% endif %}
 </article>

@@ -1,7 +1,8 @@
 ---
 title: ChopRite Foods QSR analytics
 summary: An end-to-end Excel and Power BI analysis of a fictional 13-branch Nigerian fast-food chain, built from messy exports of five systems that disagree.
-status: in-progress
+description: "An end-to-end Excel and Power BI analysis of a fictional 13-branch Nigerian fast-food chain, built from messy exports of five systems that disagree."
+status: completed
 role: Solo project
 tracks: [analytics, data-quality]
 tools: [Excel, Power Query, Power Pivot, DAX, Power BI]
@@ -10,8 +11,8 @@ data_note: Synthetic data for a fictional company
 dashboard: ""
 cover: /assets/img/projects/choprite-qsr-analytics.svg
 cover_alt: "ChopRite data architecture: five source systems flow into raw, cleaned and analytical layers, then into Excel and Power BI reports"
-featured: false
-order: 3
+featured: true
+order: 2
 ---
 
 ## The business
@@ -52,4 +53,4 @@ The data comes from five systems that don't agree: two point-of-sale systems wit
 
 ## Status
 
-In progress. Volumes are scaled down to keep the files workable in Excel on a normal laptop, so findings will be reported as ratios and trends rather than absolute naira values.
+Completed. Volumes were scaled down to keep the files workable in Excel on a normal laptop, so findings are reported as ratios and trends rather than absolute naira values.

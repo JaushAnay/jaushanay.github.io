@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-description: Data quality, analytics, data engineering and AI automation projects by Joshua Anayochukwu.
+description: Data validation, analysis, data engineering and AI automation projects by Joshua Anayochukwu.
 ---
 <div class="wrap page">
   <header class="page-head">
@@ -13,8 +13,18 @@ description: Data quality, analytics, data engineering and AI automation project
     {% for t in site.data.tracks %}<button type="button" data-filter="{{ t.id }}" aria-pressed="false">{{ t.name }}</button>{% endfor %}
   </div>
   <p class="filter-status visually-hidden" aria-live="polite"></p>
-  <div class="cards cards-all">
-    {% assign sorted = site.projects | sort: "order" %}
-    {% for p in sorted %}{% include project-card.html project=p %}{% endfor %}
-  </div>
+  {% assign sorted = site.projects | sort: "order" %}
+  <section class="project-group">
+    <h2 class="group-title">Completed and professional work</h2>
+    <div class="cards cards-all">
+      {% for p in sorted %}{% unless p.status == "in-progress" %}{% include project-card.html project=p %}{% endunless %}{% endfor %}
+    </div>
+  </section>
+  <section class="project-group">
+    <h2 class="group-title">In progress</h2>
+    <p class="group-note muted">Being built now. Each page shows the plan, the design choices and progress so far.</p>
+    <div class="cards cards-all">
+      {% for p in sorted %}{% if p.status == "in-progress" %}{% include project-card.html project=p %}{% endif %}{% endfor %}
+    </div>
+  </section>
 </div>

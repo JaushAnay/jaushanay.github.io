@@ -1,0 +1,11 @@
+<div class="services-grid">
+{%- for s in site.data.services -%}
+<section class="service t-{{ s.track }}">
+<h3>{{ s.title }}</h3>
+<p>{{ s.description }}</p>
+<h4>What you get</h4>
+<ul class="service-list">{%- for d in s.deliverables -%}<li>{{ d }}</li>{%- endfor -%}</ul>
+<ul class="tool-chips">{%- for t in s.tools -%}<li>{{ t }}</li>{%- endfor -%}</ul>
+</section>
+{%- endfor -%}
+</div>

@@ -1,6 +1,7 @@
 ---
 title: Self-hosted n8n automation stack
 summary: A self-hosted n8n instance on Render, connected to Google Sheets through my own Google Cloud OAuth client.
+description: "A self-hosted n8n instance on Render, connected to Google Sheets through my own Google Cloud OAuth client."
 status: completed
 role: Built during The AI Colony's 8-week AI Automation course
 tracks: [ai-automation]

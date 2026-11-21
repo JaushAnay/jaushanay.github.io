@@ -1,6 +1,7 @@
 ---
 title: Crestfield Hospital Data Lab
 summary: A large, intentionally messy hospital database for practising healthcare analytics and SQL data-quality validation.
+description: "A large, intentionally messy hospital database for practising healthcare analytics and SQL data-quality validation."
 status: in-progress
 role: Solo project
 tracks: [data-quality, analytics]

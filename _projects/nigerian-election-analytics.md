@@ -1,17 +1,19 @@
 ---
 title: Nigerian election analytics and data quality system
-summary: A Python system that validates, cleans and analyses Nigerian election data, and proves its own checks work against 171 deliberately planted defects.
-status: completed
+summary: A Python system that validates, cleans and analyses Nigerian election data, and tests its own checks against deliberately planted defects.
+description: "A Python system that validates, cleans and analyses Nigerian election data, and tests its own checks against deliberately planted defects."
+status: in-progress
 role: Solo project
 tracks: [data-quality, analytics]
 tools: [Python, pandas, Jupyter, pytest, Excel]
 skills: [Data quality rule design, Relational data design, Cleaning with an audit trail, Precision and recall evaluation, Election metrics, Sensitivity analysis, Automated testing]
 data_note: Synthetic results with fictional parties; real reference data only
 repo: ""
-cover: /assets/img/projects/nigerian-election-analytics.svg
-cover_alt: "Key results: 20 validation rules, 171 of 171 planted defects detected with no false positives, 43 automated tests"
-featured: true
-order: 2
+cover: /assets/img/projects/nigerian-election-analytics-method.svg
+# When finished, switch the cover to: /assets/img/projects/nigerian-election-analytics.svg (the results panel)
+cover_alt: "Election data pipeline: validate with 20 rules, clean with an audit trail, analyse election metrics, then test sensitivity"
+featured: false
+order: 3
 ---
 
 ## The problem
@@ -38,8 +40,9 @@ I documented the official data I could not use, and why. INEC's IReV portal stor
 
 ## Testing the tests
 
-To check that the rules actually catch problems, I planted 171 known defects in the raw data and kept a defect-free copy as an answer key. That let me measure each rule's precision and recall rather than assume it worked.
+To check that the rules actually catch problems, the project plants 171 known defects in the raw data and keeps a defect-free copy as an answer key. That makes it possible to measure each rule's precision and recall rather than assume it works.
 
+{% if page.status == "completed" %}
 The first version of the duplicate rule depended on file order and caught only 69% of the planted duplicates. The answer key exposed the flaw, and the fix is documented in the project.
 
 ## Results
@@ -53,6 +56,8 @@ The first version of the duplicate rule depended on file order and caught only 6
 
 Because the election figures are synthetic, the findings that matter here are about the method: the checks are measurable, and the conclusions hold up when doubtful records are removed.
 
+{% endif %}
+
 ## Rules I held to
 
 - Presidential and governorship votes are never added together.
@@ -60,9 +65,12 @@ Because the election figures are synthetic, the findings that matter here are ab
 - Margins are reported in percentage points.
 - Plausibility flags are reasons to investigate, not evidence of error or misconduct.
 
+{% if page.status == "completed" %}
 ## What it produces
 
 A one-command workflow that runs in about ten seconds, 43 automated tests, six executed notebooks, 14 charts, and three Excel reports: a data quality report, an election analytics report and a data dictionary.
+
+{% endif %}
 
 ## What I would do next
 
@@ -71,4 +79,5 @@ A one-command workflow that runs in about ten seconds, 43 automated tests, six e
 - Add a step that compares sources when two report the same unit differently.
 - Add maps once verified boundaries and official codes are available.
 
-<!-- Add the GitHub repository link in repo: at the top of this file, and 2–3 of the 14 charts as screenshots using the figure include. -->
+<!-- When the project is finished and every number above matches your own run, change status: to completed. The Results sections then appear automatically.
+Add the GitHub repository link in repo: at the top of this file, and 2–3 of the 14 charts as screenshots using the figure include. -->

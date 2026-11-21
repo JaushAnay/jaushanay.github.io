@@ -18,6 +18,13 @@ description: Work experience of Joshua Anayochukwu, data validation specialist a
     <div class="job-body">
       <h2>{{ job.role }}</h2>
       <p class="job-org">{{ job.org }}{% if job.org_note %}<span class="muted">, {{ job.org_note | downcase }}</span>{% endif %}</p>
+      {% if job.highlights and job.highlights.size > 0 %}
+      <div class="highlights">
+        <h3>Highlights</h3>
+        <ul>{% for h in job.highlights %}<li>{{ h }}</li>{% endfor %}</ul>
+      </div>
+      <h3 class="resp-title">Responsibilities</h3>
+      {% endif %}
       <ul>
         {% for pt in job.points %}<li>{{ pt }}</li>{% endfor %}
       </ul>

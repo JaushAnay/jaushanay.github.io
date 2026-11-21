@@ -1,6 +1,7 @@
 ---
 title: Castlebridge Albion FC club analytics
 summary: A club-wide analysis of a fictional Champions League side across sporting, financial, operational and commercial data.
+description: "A club-wide analysis of a fictional Champions League side across sporting, financial, operational and commercial data."
 status: in-progress
 role: Solo project
 tracks: [analytics]

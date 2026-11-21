@@ -17,6 +17,9 @@
       c.hidden = !match;
       if (match) shown++;
     });
+    document.querySelectorAll('.project-group').forEach(function (g) {
+      g.hidden = !g.querySelector('.card:not([hidden])');
+    });
     if (status) status.textContent = 'Showing ' + shown + ' project' + (shown === 1 ? '' : 's');
   }
 

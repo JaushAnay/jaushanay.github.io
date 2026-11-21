@@ -1,6 +1,7 @@
 ---
 title: Meridian Mart retail data pipeline and warehouse
 summary: A daily pipeline that pulls sales data from five mismatched sources into a tested star schema, and keeps the numbers right when files arrive late, twice, or in a new shape.
+description: "A daily pipeline that pulls sales data from five mismatched sources into a tested star schema, and keeps the numbers right when files arrive late, twice, or in a new shape."
 status: in-progress
 role: Solo project
 tracks: [data-engineering]

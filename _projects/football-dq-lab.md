@@ -1,6 +1,7 @@
 ---
 title: Football DQ Lab
 summary: A SQL data-quality system that ingests a deliberately imperfect football database, then detects, classifies, tracks and resolves its errors.
+description: "A SQL data-quality system that ingests a deliberately imperfect football database, then detects, classifies, tracks and resolves its errors."
 status: in-progress
 role: Solo project
 tracks: [data-quality, analytics]

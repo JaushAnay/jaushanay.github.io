@@ -1,0 +1,37 @@
+# Services on the Work with me page. "track" sets the colour (see _data/tracks.yml).
+- track: data-quality
+  title: Data validation and cleaning
+  description: I find and fix duplicate, inconsistent, incomplete and conflicting records, then prove the result. Every change is logged with the rule that caught it and the source behind it, so your team can trust the numbers and audit them.
+  deliverables:
+    - Data-quality audit and issue register
+    - Cleaned dataset with a full correction log
+    - Reusable validation rules
+    - Reconciliation against source and control totals
+  tools: [Excel, SQL, Python, Great Expectations]
+- track: analytics
+  title: Data analysis and dashboards
+  description: I turn raw business data into clear answers about what drives results, where money is lost and what to do next. You get dashboards your team will actually use, and a plain-language summary for decision-makers.
+  deliverables:
+    - KPI definitions and a clean data model
+    - Interactive Power BI or Excel dashboards
+    - In-depth analysis with SQL
+    - Executive summary with recommendations
+  tools: [Excel, Power Query, Power Pivot, Power BI, SQL]
+- track: data-engineering
+  title: Data pipelines and warehouses
+  description: I build pipelines that bring data from spreadsheets, databases and APIs into one reliable warehouse, refreshed automatically and tested at every step, so reports stay right even when files arrive late, twice or in a new format.
+  deliverables:
+    - Automated extraction from files, databases and APIs
+    - PostgreSQL warehouse with a tested star schema
+    - dbt models and data tests
+    - Scheduling, monitoring and documentation
+  tools: [Python, PostgreSQL, dbt, Airflow, Docker]
+- track: ai-automation
+  title: AI automation and evaluation
+  description: I automate the repetitive work around your data, from collecting and checking to routing and reporting, and I review AI output so you can rely on it. Workflows connect the tools you already use and send only real exceptions to a person.
+  deliverables:
+    - n8n workflows connecting apps, APIs and webhooks
+    - Automated data checks and alerts
+    - AI-assisted processing with human review
+    - AI output evaluation against your guidelines
+  tools: [n8n, Supabase, Google Sheets, LLM APIs]

@@ -1,6 +1,7 @@
 ---
 title: Kadara Pay payments reconciliation platform
 summary: A platform that matches every payment across ledger, card processor and bank each day, classifies every mismatch by cause, and sends only true exceptions to a person.
+description: "A platform that matches every payment across ledger, card processor and bank each day, classifies every mismatch by cause, and sends only true exceptions to a person."
 status: in-progress
 role: Solo project
 tracks: [data-engineering, data-quality]
